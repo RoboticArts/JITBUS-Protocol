@@ -129,10 +129,13 @@ Se envia un mensaje con identificador 0x1D4 y dato 19. Es recomendable realizar 
 
 ## Recepcion de datos
 
+Para recibir los datos hay que invocar la función de abajo. Esto permite leer desde el puerto serie y encontrar el mensaje entre los datos en raw recibidos desde otro dispositivo que ha enviado una trama JITBUS. Todos los mensajes correctamente recibidos se almacenarán en un buffer de 256 bytes a la espera de que sean consultados. La función devuelve el número de mensajes que existen en dicho buffer hasta el momento
+
 ```python
  if myJitbus.availableMsg() > 0:
       #Hacer cosas...
  ```
-    
+ 
+ 
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
