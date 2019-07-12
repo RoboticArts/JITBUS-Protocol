@@ -219,7 +219,7 @@ if myJitbus.availableMsg() > 0:
             getId, getData = myJitbus.getDataFromMaskId(0x1D4)
 ```
 
-Ejemplo de recepcion con filtrado 2 
+Ejemplo de recepcion con filtrado 3 
 
   ```python
 if myJitbus.availableMsg() > 0:
@@ -228,6 +228,9 @@ if myJitbus.availableMsg() > 0:
 
             getId, getData = myJitbus.getLastDataFromMaskId(0x1D4)
  ```
+
+# Interfaz JITBUS
+
 
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
