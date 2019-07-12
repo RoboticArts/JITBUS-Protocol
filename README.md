@@ -75,9 +75,9 @@ Es importante que si quieres conseguir la máxima velocidad emplees el FTDI 232R
 ![latencia](images/latenciaW10.png)
 
 
-Una vez con todos los recursos necesarios ¡ejecuta el programa! Por ejemplo, el resultado para el ejemplo example_getAllMsgs es el siguiente:
+Una vez con todos los recursos necesarios ¡ejecuta el programa! Por ejemplo, el resultado para el ejemplo *example_getAllMsgs* es el siguiente:
 
-![](images/result-example-getAllMsgs)
+![example1](images/result-example-getAllMsgs)
 
 
 
