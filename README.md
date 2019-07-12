@@ -231,6 +231,9 @@ if myJitbus.availableMsg() > 0:
 
 # Interfaz JITBUS
 
+![](images/gui-1.jpg)
+![](images/gui-2.jpg)
+![](images/gui-3.jpg)
 
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
