@@ -2,11 +2,12 @@
 # JITBUS-Protocol
 
 Autor: Robert Vasquez Zavaleta
+
 *Robotic Arts, All Rights Reserved 2017-2019*
 
 ## Contenidos
 
-* Protocolo JITBUS
+* [Protocolo JITBUS] (## Introducción 📑)
   * Introducción
   * Motivación
   * Protocolo JITBUS
