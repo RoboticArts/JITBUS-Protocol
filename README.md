@@ -127,9 +127,9 @@ time.sleep(0.002)
 
 Se envia un mensaje con identificador 0x1D4 y dato 19. Es recomendable realizar una espera de 2 ms para evitar problemas con la latencia del ordenador. Si no se realiza la pausa, los bytes recibidos por el puerto serie que no hayan sido recogidos por el USB se almacenarán en un buffer para su posterior comprobación. 
 
-## Recepcion de datos
+## Recepcion de mensajes
 
-Para recibir los datos hay que invocar la función de abajo. Esto permite leer desde el puerto serie y encontrar el mensaje entre los datos en raw recibidos desde otro dispositivo que ha enviado una trama JITBUS. Todos los mensajes correctamente recibidos se almacenarán en un buffer de 256 bytes a la espera de que sean consultados. La función devuelve el número de mensajes que existen en dicho buffer hasta el momento
+Para recibir los mensajes hay que invocar la función de abajo. Esto permite leer desde el puerto serie y encontrar el mensaje entre los datos en raw recibidos desde otro dispositivo que ha enviado una trama JITBUS. Todos los mensajes correctamente recibidos se almacenarán en un buffer de 256 bytes a la espera de que sean consultados. La función devuelve el número de mensajes que existen en dicho buffer hasta el momento
 
 ```python
  if myJitbus.availableMsg() > 0:
@@ -167,5 +167,13 @@ Si en vez de recibir todos los mensajes de golpe se desea recibirlos uno a uno s
             getId, getData = myJitbus.getMsg()
    
 ```
-  
+ 
+ ## Recepcion de mensajes con filtrado
+ 
+Cuando es necesario recibir la respuesta de un mensaje con un indetificador en concreto es posible filtrar el mensaje e ignorar al resto. Para ello basta con llamar a la función de abajo siempre y cuando hayan datos disponibles en el buffer. Esta función, a partir del identificador del mensaje que se pretende encontrar, busca todos los mensajes que se encuentran en el buffer que posean el ID especificado. Devuelve el número de mensajes encontrados en el buffer con el ID indicado.
+
+```python
+if myJitbus.isThereDataFromMaskId(0x1D4) > 0:
+      #Hacer cosas...
+```
  Implementation of a protocol for communication between USB devices through a virtual serial port
