@@ -77,7 +77,7 @@ Es importante que si quieres conseguir la máxima velocidad emplees el FTDI 232R
 
 Una vez con todos los recursos necesarios ¡ejecuta el programa! Por ejemplo, el resultado para el ejemplo *example_getAllMsgs* es el siguiente:
 
-![example1](images/result-example-getAllMsgs)
+![example1](images/result-example-getAllMsgs.png)
 
 
 
