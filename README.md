@@ -62,7 +62,7 @@ Abre uno de los ejemplos de la carpeta *examples*. Estos ejemplos envian la tram
  
  ![schematic](http://buyhere22.com/components/usb-ttl-ft232rl-pinout.png)
 
-### Mejora la latencia
+### Mejorando la latencia
 
 Por defecto, la latencia en Windows es de 16 ms, esto hace un cuello de botella si se desean tramisitir datos a gran velocidad. Para camibar la latencia hay que ir a:
 
