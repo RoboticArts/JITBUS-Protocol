@@ -8,7 +8,7 @@ Autor: Robert Vasquez Zavaleta
 **Contenidos:**
 
 * Protocolo JITBUS
-  * [Introducción](## Introducción 📑)
+  * [Introducción 📑](#introducción)
   * Motivación
   * Protocolo JITBUS
   * ¡Comenzando!
