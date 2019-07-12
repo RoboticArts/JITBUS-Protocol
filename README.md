@@ -191,10 +191,22 @@ getId, getData = myJitbus.getDataFromMaskId(id)
 
 Normalemente, cuando se trabaja con sensores en aplicaciones de monitoreo interesa saber cual es el valor actual de ese sensor. Debido a la latencia del USB, los datos no se envian en tiempo real por lo que se almacenan en un buffer a la espera de ser procesados. Cuando se leen los datos del buffer para un sensor en concreto puede darse el caso de que aparezcan varios valores. Por ejemplo, un sensor de velocidad podría devolver en un mismo buffer los valores 3.2 m/s ,  3.3 m/s  y 3.24 m/s. Es lógico pensar que el valor que interesa obtener es el último (3.24 m/s) ya que es el valor más reciente y el resto han llegado tarde.
 
-Por ello, se ha implementado una función que permite obtener el último mensaje que hay en el buffer con el ID indicado. Cuando esta función termina, todos los mensajes con el ID indicado se borran.
+Por ello, se ha implementado una función que permite obtener el último mensaje que hay en el buffer con el ID indicado. Cuando esta función termina, todos los mensajes con el ID indicado se borran del buffer.
 
 ```python
 getId, getData = myJitbus.getLastDataFromMaskId(id)
+```
+
+ Ejemplo de recepcion con filtrado 2 
+ 
+ ```python
+ if myJitbus.availableMsg() > 0:
+
+      numberOfMsgsWithID = myJitbus.isThereDataFromMaskId(0x1D4)
+
+      for w in range (numberOfMsgsWithID):
+
+            getId, getData = myJitbus.getDataFromMaskId(0x1D4)
 ```
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
