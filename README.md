@@ -170,10 +170,29 @@ Si en vez de recibir todos los mensajes de golpe se desea recibirlos uno a uno s
  
  ## Recepcion de mensajes con filtrado
  
-Cuando es necesario recibir la respuesta de un mensaje con un indetificador en concreto es posible filtrar el mensaje e ignorar al resto. Para ello basta con llamar a la función de abajo siempre y cuando hayan datos disponibles en el buffer. Esta función, a partir del identificador del mensaje que se pretende encontrar, busca todos los mensajes que se encuentran en el buffer que posean el ID especificado. Devuelve el número de mensajes encontrados en el buffer con el ID indicado.
+Cuando es necesario recibir la respuesta de un mensaje que tenga un identificador concreto es posible filtrar el mensaje e ignorar al resto. Para ello, basta con llamar a la función de abajo siempre y cuando hayan datos disponibles en el buffer. Esta función, a partir del identificador del mensaje que se pretende encontrar, devuelve el número de mensajes que existen en el buffer con el ID indicado.
 
 ```python
 if myJitbus.isThereDataFromMaskId(0x1D4) > 0:
       #Hacer cosas...
 ```
+
+Cuando hay mensajes con el ID especificado, la función de abajo devuelve de golpe todos los mensajes almacenados que posean ese ID. Una vez que la función ha terminado SOLO los mensajes con ese ID del buffer son eliminados. Si hay mas de un mensaje almacenado, las variables *getId* y *getData* se convierten en vectores.
+
+```python
+getId, getData = myJitbus.getAllDataFromMaskId(id)
+```
+
+Si en vez de recibir todos los mensajes con un ID especificado de golpe se desea recibirlos uno a uno se debe emplear la función de abajo. Dicha función devuelve el valor del primer mensaje almacenado en el buffer con ese ID. Hay que tener en cuenta que una vez leido ese mensaje, se borrará del buffer.
+
+```python
+getId, getData = myJitbus.getDataFromMaskId(id)
+```
+
+
+
+```python
+getId, getData = myJitbus.getLastDataFromMaskId(id)
+```
+
  Implementation of a protocol for communication between USB devices through a virtual serial port
