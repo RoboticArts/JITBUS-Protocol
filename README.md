@@ -68,7 +68,7 @@ Por defecto, la latencia en Windows es de 16 ms, esto hace un cuello de botella 
 
   * Administrador de Dispositivos -> Puerto COM (el nuestro) -> Propiedades -> Configuración del puerto -> Opciones Avanzadas 
 
-![](latenciaW10)
+![latencia](latenciaW10)
 
 Es importante que si quieres conseguir la máxima velocidad emplees el FTDI 232RL o alguno similar del mismo fabricante. Los chips como el CH340 son mas lentos ya que no se les puede modificar la latencia.
 
