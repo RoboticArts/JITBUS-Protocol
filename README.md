@@ -147,4 +147,25 @@ Si en vez de recibir todos los mensajes de golpe se desea recibirlos uno a uno s
  getId, getData = myJitbus.getMsg()
  ```
 
+ Ejemplo de recepcion 1 
+ 
+ ```python
+     if myJitbus.availableMsg() > 0:
+
+        getId, getData = myJitbus.getAllMsgs()
+```
+  
+   Ejemplo de recepcion 2
+   
+```python
+    if myJitbus.availableMsg() > 0:
+
+        numberOfMsgs = myJitbus.availableMsg()
+
+        for w in range (numberOfMsgs):
+
+            getId, getData = myJitbus.getMsg()
+   
+```
+  
  Implementation of a protocol for communication between USB devices through a virtual serial port
