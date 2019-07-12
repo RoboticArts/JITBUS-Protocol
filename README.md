@@ -127,4 +127,12 @@ time.sleep(0.002)
 
 Se envia un mensaje con identificador 0x1D4 y dato 19. Es recomendable realizar una espera de 2 ms para evitar problemas con la latencia del ordenador. Si no se realiza la pausa, los bytes recibidos por el puerto serie que no hayan sido recogidos por el USB se almacenarán en un buffer para su posterior comprobación. 
 
+## Recepcion de datos
+
+```python
+ if myJitbus.availableMsg() > 0:
+      #Hacer cosas...
+ ```
+    
+
  Implementation of a protocol for communication between USB devices through a virtual serial port
