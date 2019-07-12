@@ -19,7 +19,7 @@ Existe el protocolo Modbus RTU sobre puerto serie el cual posee librerias para f
 
 Ejemplo del protocolo JITBUS cuando se envia el identificador 0x1D4 y el dato 19
 
-![protocol](jitbus-protocol.png)
+![protocol](images/jitbus-protocol.png)
 
 JITBUS significa Just In Time Bus y es un protocolo en el que se envian unicamente los datos necesarios justo a tiempo. Esta basado en la estructura del protocolo CAN estándar. Dada su similitud es muy sencillo transmitir mediante JITBUS los datos recibidos de un dispositivo CAN a traves de un microcontrolador para que los datos puedan ser adquiridos por el USB de un ordenador. 
 
@@ -75,7 +75,9 @@ Es importante que si quieres conseguir la máxima velocidad emplees el FTDI 232R
 ![latencia](images/latenciaW10.png)
 
 
+Una vez con todos los recursos necesarios ¡ejecuta el programa! Por ejemplo, el resultado para el ejemplo example_getAllMsgs es el siguiente:
 
+![](images/result-example-getAllMsgs)
 
 
 
