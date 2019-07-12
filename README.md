@@ -197,6 +197,16 @@ Por ello, se ha implementado una función que permite obtener el último mensaje
 getId, getData = myJitbus.getLastDataFromMaskId(id)
 ```
 
+ Ejemplo de recepcion con filtrado 1
+
+ ```python
+if myJitbus.availableMsg() > 0:
+
+      if myJitbus.isThereDataFromMaskId(0x1D4) > 0:
+
+            getId, getData = myJitbus.getAllDataFromMaskId(0x1D4)
+ ```
+
  Ejemplo de recepcion con filtrado 2 
  
  ```python
@@ -208,5 +218,16 @@ getId, getData = myJitbus.getLastDataFromMaskId(id)
 
             getId, getData = myJitbus.getDataFromMaskId(0x1D4)
 ```
+
+Ejemplo de recepcion con filtrado 2 
+
+  ```python
+if myJitbus.availableMsg() > 0:
+
+      if myJitbus.isThereDataFromMaskId(0x1D4) > 0:
+
+            getId, getData = myJitbus.getLastDataFromMaskId(0x1D4)
+ ```
+
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
