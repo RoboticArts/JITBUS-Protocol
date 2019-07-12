@@ -49,7 +49,7 @@ Por otro lado, el protocolo JITBUS tiene dedicado un bit para saber el signo del
 * Implementar una capa de aplicación en este protocolo que permita crear un diccionario de objetos. De esta forma cada actuador tendrá un identificador fijo que facilite la portabilidad del codigo.
 
 
-## ¡Comenzando!
+## ¡Comenzando! :rocket:
 
 Descarga este repositorio desde Github Web para poner en marcha todos los ejemplos. Asegurate que el directorio en tu ordenador debe quedar de la siguiente forma:
       
