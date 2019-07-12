@@ -25,6 +25,8 @@ JITBUS significa Just In Time Bus y es un protocolo en el que se envian unicamen
 
 Los componentes que el usuario debe tener en cuenta son la ID y el DATO. El ID representa la identificación del dispositivo al que se debe acceder. Por ejemplo un controlador de motor que se comunique por puerto serie (nativo o virtual) puede tener asignada la direccion 0x1D4 y un controlador de leds la direccion 0xFF. Esta asigación debe ser establecidad por el programador y según el dispositivo que se trate él debe considerar el DATO de una forma u otra. Por ejemplo, si el ID es del motor, el DATO se puede tratar de la velocidad (si asi lo ha establecido el programador). 
 
+### Partes del protocolo
+
 Las partes del protocolo son las siguientes
 * *Start bit:* bit que detecta el inicio de la trama
 * *Data lenght:* dos bits que indican la longitud máxima del DATO en bytes (1-4 bytes)
@@ -34,9 +36,17 @@ Las partes del protocolo son las siguientes
 * *Data:* dato que se envia, su tamaño puede ser de 1,2,3 o 4 bytes
 * *CRC:* verificación de redundancia cíclica de tipo CCITT
 
+### Tipos de DATO a enviar
+
 El dato a enviar puede ser de tipo *float* o de tipo *int*, en ambos casos el valor no será nunca superior a 32 bits. Las variables de tipo *float* son de precision simple y ocupan siempre 4 bytes en el protocolo. Las variable de tipo *int* ocuparán 1, 2, 3 o 4 bytes en función del valor que se pretenda transmitir. No es necesario indicar de qué tipo será el dato a enviar y tampoco hay que indicar la longitud que va a ocupar, el módulo JITBUS se encarga de hacerlo automaticamente por el programador.
 
 Por otro lado, el protocolo JITBUS tiene dedicado un bit para saber el signo del DATO. Esto significa que las variables de tipo entero pueden adquirir ![](http://latex.codecogs.com/gif.latex?2%5E%7B32%7D) valores tanto en positivo como en negativo. Los valores máximos y mínimos de las variables float se rigen por la norma IEE 754 con precision simple.
+
+### Mejoras futuras
+
+* Los once bits de indentificacion pueden partirse en 7 bits para la identificacion del dipositivo y otros 4 bits para poder indicar alguna caracteristica del dispositivo. Por ejemplo, en el controlador de un motor, con un ID de 7 bits, se podrían señalar 16 caracteristicas diferentes: velocidad, posicion inicial, valores del PI, etc.
+
+* Implementar una capa de aplicación en este protocolo que permita crear un diccionario de objetos. De esta forma cada actuador tendrá un identificador fijo que facilite la portabilidad del codigo.
 
 
 ## ¡Comenzando!
