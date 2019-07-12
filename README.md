@@ -25,7 +25,9 @@ JITBUS significa Just In Time Bus y es un protocolo en el que se envian unicamen
 
 Los componentes que el usuario debe tener en cuenta son la ID y el DATO. El ID representa la identificación del dispositivo al que se debe acceder. Por ejemplo un controlador de motor que se comunique por puerto serie (nativo o virtual) puede tener asignada la direccion 0x1D4 y un controlador de leds la direccion 0xFF. Esta asigación debe ser establecidad por el programador y según el dispositivo que se trate él debe considerar el DATO de una forma u otra. Por ejemplo, si el ID es del motor, el DATO se puede tratar de la velocidad (si asi lo ha establecido el programador). 
 
-
+Las partes del protocolo son las siguientes
+* Pole
+    * Poelomenta
 
 
 
