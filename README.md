@@ -7,7 +7,7 @@ Autor: Robert Vasquez Zavaleta
 ## Contenidos
 
 * Protocolo JITBUS
-      * Introducción
+  * Introducción
 
 ## Introducción 📑
 
