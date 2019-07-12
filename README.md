@@ -231,7 +231,9 @@ if myJitbus.availableMsg() > 0:
 
 # Interfaz JITBUS
 
-Por último es posible ejecutar la interfaz de ejemplo para poder comunicarse con dispositivos que implementen el protocolo JITBUS de forma visual. Dicha interfaz tiene tres pestañas. La primera de todas sirve para conectarse con el dispositivo con el que realizar la comunicación:
+Por último es posible ejecutar la interfaz de ejemplo para poder comunicarse con dispositivos que implementen el protocolo JITBUS de forma visual. Este programa forma parte de un proyecto más grande que aún no está acabado sin embargo es útil para comprobar que los dispositivos JITBUS funcionan correctamente.
+
+La interfaz tiene tres pestañas. La primera de todas sirve para conectarse con el dispositivo con el que realizar la comunicación:
 
 ![](images/gui-1.jpg)
 
