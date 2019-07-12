@@ -103,8 +103,9 @@ Ejemplo de inicialización
 ```python
 myJitbus = jitbus.JitbusUSB()
 myJitbus.open("COM10", 3000000 , 0.00000001)
-```python
+```
 
+Se crea un objeto llamado *myJitbus* y se abre el puerto COM10 a 3 Mbits/s con un timeout pequeño
 
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
