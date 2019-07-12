@@ -8,6 +8,15 @@ Autor: Robert Vasquez Zavaleta
 
 * Protocolo JITBUS
   * Introducción
+  * Motivación
+  * Protocolo JITBUS
+  * ¡Comenzando!
+* Funciones del módulo JITBUS
+  * Inicialización
+  * Envío de mensajes
+  * Recepción de mensajes
+  * Recepción de mensajes con filtrado
+* Interfaz JITBUS 
 
 ## Introducción 📑
 
