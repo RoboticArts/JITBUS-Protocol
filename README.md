@@ -110,6 +110,12 @@ Se crea un objeto llamado *myJitbus* y se abre el puerto COM10 a 3 Mbits/s con u
 
 ## Envio de mensajes
 
+Mediante la siguiente función se envia la trama JITBUS. Es necesario indicar el identificacdor (máximo 0x7FF) y el dato que puede ser un valor entero o decimal positivo o negativo (máximo ![](http://latex.codecogs.com/gif.latex?2%5E%7B32%7D) )
+
+```python
+myJitbus.sendMsg(id, data)
+```
+
 Ejemplo de envio de un mensaje
 
 ```python
@@ -118,5 +124,7 @@ data = 19
 myJitbus.sendMsg(id, data)
 time.sleep(0.002)
 ```
+
+Se envia un mensaje con identificador 0x1D4 y dato 19. Es recomendable realizar una espera de 2 ms para evitar problemas con la latencia del ordenador. Si no se realiza la pausa, los bytes recibidos por el puerto serie que no hayan sido recogidos por el USB se almacenarán en un buffer para su posterior comprobación. 
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
