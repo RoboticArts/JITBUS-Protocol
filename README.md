@@ -5,9 +5,9 @@ Autor: Robert Vasquez Zavaleta
 
 *Robotic Arts, All Rights Reserved 2017-2019*
 
-## Contenidos
+**Contenidos:**
 
-* [Protocolo JITBUS] (## Introducción 📑)
+* [Introducción] (Protocolo JITBUS)
   * Introducción
   * Motivación
   * Protocolo JITBUS
