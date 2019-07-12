@@ -34,8 +34,7 @@ Las partes del protocolo son las siguientes
 * Data: dato que se envia, su tamaño puede ser de 1,2,3 o 4 bytes
 * CRC: verificación de redundancia cíclica de tipo CCITT
 
-
-
+![](http://latex.codecogs.com/gif.latex?2%5E%7B32%7D)
 
 
 ## ¡Comenzando!
