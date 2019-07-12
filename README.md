@@ -26,15 +26,17 @@ JITBUS significa Just In Time Bus y es un protocolo en el que se envian unicamen
 Los componentes que el usuario debe tener en cuenta son la ID y el DATO. El ID representa la identificación del dispositivo al que se debe acceder. Por ejemplo un controlador de motor que se comunique por puerto serie (nativo o virtual) puede tener asignada la direccion 0x1D4 y un controlador de leds la direccion 0xFF. Esta asigación debe ser establecidad por el programador y según el dispositivo que se trate él debe considerar el DATO de una forma u otra. Por ejemplo, si el ID es del motor, el DATO se puede tratar de la velocidad (si asi lo ha establecido el programador). 
 
 Las partes del protocolo son las siguientes
-* Start bit: bit que detecta el inicio de la trama
-* Data lenght: dos bits que indican la longitud máxima del DATO en bytes (1-4 bytes)
-* Identification: once bits que indican la identificacion del dispositivo
-* Type bit: indica si el DATO es de tipo float o entero 
-* Sign bit: indica el signo del DATO
-* Data: dato que se envia, su tamaño puede ser de 1,2,3 o 4 bytes
-* CRC: verificación de redundancia cíclica de tipo CCITT
+* *Start bit:* bit que detecta el inicio de la trama
+* *Data lenght:* dos bits que indican la longitud máxima del DATO en bytes (1-4 bytes)
+* *Identification:* once bits que indican la identificacion del dispositivo
+* *Type bit:* indica si el DATO es de tipo float o entero 
+* *Sign bit:* indica el signo del DATO
+* *Data:* dato que se envia, su tamaño puede ser de 1,2,3 o 4 bytes
+* *CRC:* verificación de redundancia cíclica de tipo CCITT
 
-![](http://latex.codecogs.com/gif.latex?2%5E%7B32%7D)
+El dato a enviar puede ser de tipo *float* o de tipo *int*, en ambos casos el valor no será nunca superior a 32 bits. Las variables de tipo *float* son de precision simple y ocupan siempre 4 bytes en el protocolo. Las variable de tipo *int* ocuparán 1, 2, 3 o 4 bytes en función del valor que se pretenda transmitir. No es necesario indicar de qué tipo será el dato a enviar y tampoco hay que indicar la longitud que va a ocupar, el módulo JITBUS se encarga de hacerlo automaticamente por el programador.
+
+Por otro lado, el protocolo JITBUS tiene dedicado un bit para saber el signo del DATO. Esto significa que las variables de tipo entero pueden adquirir ![](http://latex.codecogs.com/gif.latex?2%5E%7B32%7D) valores tanto en positivo como en negativo. Los valores máximos y mínimos de las variables float se rigen por la norma IEE 754 con precision simple.
 
 
 ## ¡Comenzando!
