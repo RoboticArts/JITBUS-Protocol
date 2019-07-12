@@ -58,6 +58,8 @@ Descarga este repositorio desde Github Web para poner en marcha todos los ejempl
    * GUI test
    * jitbus.py
  
+Abre uno de los ejemplos de la carpeta *examples*. Estos ejemplos envian la trama JITBUS, esperan la respuesta y reciben la trama en el mismo código. Por este motivo es necesario que conectes por USB un disposivo que implemente el protocolo JITBUS para que pueda contestar. Sino dispones de ese recurso puedes emplear un chip FTDI en modo eco (loopback mode). Para ello hay que conectar el pin TX al pin RX. De este forma la trama enviada al chip FTDI sera devuelta al ordenador como si fuera un eco.
+ 
  ![schematic](http://buyhere22.com/components/usb-ttl-ft232rl-pinout.png)
 
        
