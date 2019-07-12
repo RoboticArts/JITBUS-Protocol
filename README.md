@@ -11,7 +11,7 @@ Cada una de las funciones viene acompañada de un ejemplo para comprender su uti
 
 Descarga este repositorio desde Github Web para poner en marcha todos los ejemplos. Asegurate que el directorio en tu ordenador debe quedar de la siguiente forma:
       
-      * MiProyecto
+      *MiProyecto
           *examples
           *GUI test
            jitbus.py
