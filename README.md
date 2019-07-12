@@ -72,7 +72,7 @@ Por defecto, la latencia en Windows es de 16 ms, esto hace un cuello de botella 
 
 Es importante que si quieres conseguir la máxima velocidad emplees el FTDI 232RL o alguno similar del mismo fabricante. Los chips como el CH340 son mas lentos ya que no se les puede modificar la latencia.
 
-![latencia](latenciaW10.png)
+![latencia](images/latenciaW10.png)
 
 
 
