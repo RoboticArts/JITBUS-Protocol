@@ -7,8 +7,8 @@ Autor: Robert Vasquez Zavaleta
 
 **Contenidos:**
 
-* [Introducción] (Protocolo JITBUS)
-  * Introducción
+* Protocolo JITBUS
+  * [Introducción](#introducción)
   * Motivación
   * Protocolo JITBUS
   * ¡Comenzando!
