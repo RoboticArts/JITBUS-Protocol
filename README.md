@@ -84,6 +84,7 @@ Una vez con todos los recursos necesarios ¡ejecuta el programa! Por ejemplo, el
 
 El módulo JITBUS para Python implementa las funciones necesarias para enviar y recibir los mensajes. Las funciones son:
 
+```python
 * jitbus.JitbusUSB()
 * myJitbus.open(COMport, baudrate , timeout)
 * myJitbus.sendMsg(id, data)
@@ -93,6 +94,6 @@ El módulo JITBUS para Python implementa las funciones necesarias para enviar y 
 * myJitbus.isThereDataFromMaskId(id)
 * myJitbus.getAllDataFromMaskId(id)
 * myJitbus.getDataFromMaskId(0x1D4)
-
+```
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
