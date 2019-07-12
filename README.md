@@ -136,6 +136,11 @@ Para recibir los datos hay que invocar la función de abajo. Esto permite leer d
       #Hacer cosas...
  ```
  
+ Cuando hay datos disponibles en el buffer la función de abajo devuelve de golpe todos los mensajes almacenados hasta el momento. Una vez que la función ha terminado los mensajes del buffer son eliminados. Si hay mas de un mensaje almacenado, las variables *getId* y *getData* se convierten en vectores.
  
+ ```python
+ getId, getData = myJitbus.getAllMsgs()
+ ```
+
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
