@@ -94,6 +94,7 @@ El módulo JITBUS para Python implementa las funciones necesarias para enviar y 
   myJitbus.isThereDataFromMaskId(id)
   myJitbus.getAllDataFromMaskId(id)
   myJitbus.getDataFromMaskId(id)
+  myJitbus.getLastDataFromMaskId(id)
 ```
 
 ## Inicialización 
@@ -107,5 +108,15 @@ myJitbus.open("COM10", 3000000 , 0.00000001)
 
 Se crea un objeto llamado *myJitbus* y se abre el puerto COM10 a 3 Mbits/s con un timeout pequeño
 
+## Envio de mensajes
+
+Ejemplo de envio de un mensaje
+
+```python
+id = 0x1D4
+data = 19
+myJitbus.sendMsg(id, data)
+time.sleep(0.002)
+```
 
  Implementation of a protocol for communication between USB devices through a virtual serial port
