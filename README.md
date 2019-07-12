@@ -53,11 +53,12 @@ Por otro lado, el protocolo JITBUS tiene dedicado un bit para saber el signo del
 
 Descarga este repositorio desde Github Web para poner en marcha todos los ejemplos. Asegurate que el directorio en tu ordenador debe quedar de la siguiente forma:
       
-* MiProyecto
+* JITBUS-Protocol
    * examples
    * GUI test
    * jitbus.py
-           
+ 
+ ![schematic](http://buyhere22.com/components/usb-ttl-ft232rl-pinout.png)
 
        
 
