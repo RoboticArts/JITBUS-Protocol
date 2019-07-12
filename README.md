@@ -62,8 +62,12 @@ Abre uno de los ejemplos de la carpeta *examples*. Estos ejemplos envian la tram
  
  ![schematic](http://buyhere22.com/components/usb-ttl-ft232rl-pinout.png)
 
-       
+### Mejora la latencia
 
+Por defecto, la latencia en Windows es de 16 ms, esto hace un cuello de botella si se desean tramisitir datos a gran velocidad. Para camibar la latencia hay que ir a Administrador de Dispositivos -> Puerto COM (el nuestro) -> Propiedades -> Configuración del puerto -> Opciones Avanzadas 
+
+
+Es importante que si quieres conseguir la máxima velocidad emplees el FTDI 232RL o alguno similar del mismo fabricante. Los chips como el CH340 son mas lentos ya que no se les puede modificar la latencia.
 
 
 
