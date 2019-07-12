@@ -17,7 +17,9 @@ Existe el protocolo Modbus RTU sobre puerto serie el cual posee librerias para f
 
 ## Protocolo JITBUS
 
-![MCP2515 CAN-Shield wiring](jitbus-protocol.png)
+Ejemplo del protocolo JITBUS cuando se envia el identificador 0x1D4 y el dato 19
+
+![protocol](jitbus-protocol.png)
 
 
 
