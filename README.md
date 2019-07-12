@@ -231,9 +231,15 @@ if myJitbus.availableMsg() > 0:
 
 # Interfaz JITBUS
 
+Por último es posible ejecutar la interfaz de ejemplo para poder comunicarse con dispositivos que implementen el protocolo JITBUS de forma visual. Dicha interfaz tiene tres pestañas. La primera de todas sirve para conectarse con el dispositivo con el que realizar la comunicación:
+
 ![](images/gui-1.jpg)
+
+La segunda pestaña permite enviar y recibir los mensajes. Hay que indicar el ID y el dato a enviar y pulsar el boton. Por otro lado, el botón de recibir leerá el último dato que haya en buffer y lo mostrará por pantalla. A partir de los checkbutton es posible indicar qué casilla enviara y recibirá el mensaje.
+
 ![](images/gui-2.jpg)
+
+La tercera pantalla permite enviar y recibir datos simultáneamente. Los mensajes se envian cada vez que el valor de la barra cambia y a su misma vez se comprueban si hay mensajes disposibles para mostrarlos.
+
 ![](images/gui-3.jpg)
 
-
- Implementation of a protocol for communication between USB devices through a virtual serial port
