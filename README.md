@@ -1,4 +1,6 @@
-# JITBUS-Protocol  <a name="protocolo-jitbus"/>
+# JITBUS-Protocol 
+
+<a name="protocolo-jitbus"/>
 
 Autor: Robert Vasquez Zavaleta
 
@@ -26,6 +28,8 @@ Implementación de un protocolo para la comunicación por puerto serie entre dis
 
 Cada una de las funciones viene acompañada de un ejemplo para comprender su utilidad. También se ha creado una interfaz para poder gestionar de forma visual la comunicación. Dicha GUI forma parte de otro proyecto más grande aún en construcción, sin embargo, es completamente funcional para comprender el funcionamiento del protocolo.
 
+<a name="motivacion"/>
+
 ## Motivación 💪
 
 Existen pocos protocolos de comunicación orientados a transmitir datos de sensores o actuadores a través del bus USB. Uno de sus motivos se debe a que este bus es poco determinista y está sujeto a la latencia de un ordenador que no implementa un planificador de tiempo real. No obstante, hay aplicaciones donde no es importante cumplir plazos de tiempo en donde se requiere una transmisión de datos.
@@ -33,6 +37,8 @@ Existen pocos protocolos de comunicación orientados a transmitir datos de senso
 El USB tiene varios perfiles (almacenamiento masivo, audio HID), se ha elegido emular un puerto serie virtual para la transmisión de datos. Este método es elegido por la gran mayoría de fabricantes cuando quieren transmitir información de sensores o actuadores en sus productos. Sin embargo, cada uno de los fabricantes termina creando su propio protocolo. Esto causa que no haya un protocolo general de comunicación y que cada persona tenga que crearse el suyo desde cero para transmitir datos. 
 
 Existe el protocolo Modbus RTU sobre puerto serie el cual posee librerías para funcionar en un ordenador. El problema ocurre cuando se intenta migrar a un microcontrolador. Esto provoca que se tenga que volver a escribir la librería desde cero en el uC ya que nunca hay librerías Modbus para todas las arquitecturas. Ante esta situación, como igualmente tenía que escribir un protocolo, decidí crearme el mío y lo llamé protocolo JITBUS. Este protocolo está orientado principalmente a la robótica.
+
+<a name="protocolo"/>
 
 ## Protocolo JITBUS 🔨
 
@@ -98,6 +104,7 @@ Una vez con todos los recursos necesarios ¡ejecuta el programa! Por ejemplo, el
 
 ![example1](images/result-getAllMsgs.png)
 
+<a name="funciones"/>
 
 # Funciones del módulo JITBUS
 
@@ -116,6 +123,8 @@ El módulo JITBUS para Python implementa las funciones necesarias para enviar y 
   myJitbus.getLastDataFromMaskId(id)
 ```
 
+<a name="inicialización"/>
+
 ## Inicialización 
 
 Ejemplo de inicialización 
@@ -126,6 +135,8 @@ myJitbus.open("COM10", 3000000 , 0.00000001)
 ```
 
 Se crea un objeto llamado *myJitbus* y se abre el puerto COM10 a 3 Mbits/s con un timeout pequeño
+
+<a name="envio"/>
 
 ## Envío de mensajes
 
@@ -145,6 +156,8 @@ time.sleep(0.002)
 ```
 
 Se envía un mensaje con identificador 0x1D4 y dato 19. Es recomendable realizar una espera de 2 ms para evitar problemas con la latencia del ordenador. Si no se realiza la pausa, los bytes recibidos por el puerto serie que no hayan sido recogidos por el USB se almacenarán en un buffer para su posterior comprobación. 
+
+<a name="recpecion"/>
 
 ## Recepción de mensajes
 
@@ -186,6 +199,8 @@ Si en vez de recibir todos los mensajes de golpe se desea recibirlos uno a uno s
             getId, getData = myJitbus.getMsg()
    
 ```
+ 
+ <a name="recpecion-filtrado"/>
  
  ## Recepción de mensajes con filtrado
  
@@ -247,6 +262,8 @@ if myJitbus.availableMsg() > 0:
 
             getId, getData = myJitbus.getLastDataFromMaskId(0x1D4)
  ```
+
+<a name="interfaz"/>
 
 # Interfaz JITBUS
 
