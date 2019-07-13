@@ -7,10 +7,10 @@ Autor: Robert Vasquez Zavaleta
 
 **Contenidos:**
 
-* [Protocolo JITBUS]
+* [Protocolo JITBUS](#protocolo-jitbus)
   * [Introducción](#introducción)
   * [Motivación](#motivacion)
-  * [Protocolo JITBUS](#protocolo-jitbus)
+  * [Protocolo JITBUS](#protocolo)
   * [¡Comenzando!](#comenzando)
 * [Funciones del módulo JITBUS](#funciones)
   * [Inicialización](#inicialización)
