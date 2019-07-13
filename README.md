@@ -20,6 +20,7 @@ Autor: Robert Vasquez Zavaleta
 * Interfaz JITBUS 
 
 <a name="introducción"/>
+
 ## Introducción 📑
 
 Implementación de un protocolo para la comunicación por puerto serie entre dispositivos que empleen esta comunicación de forma nativa o virtual (por ejemplo, a través de un USB). El protocolo de este repositorio se ha escrito en Python y está pensado para ejecutarse en un ordenador. 
