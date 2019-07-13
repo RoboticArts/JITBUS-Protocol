@@ -83,6 +83,12 @@ Descarga este repositorio desde Github Web para poner en marcha todos los ejempl
    * examples
    * GUI test
    * jitbus.py
+   
+Es recomendable trabajar con el *IDE PyCharm* y Python 3.6 ya que son las condiciones con las que se ha desarrollado el proyecto. Los modulos que deben instalarse previamente para hacer funionar los ejemplos  son:
+
+ * pyserial 2.7
+ * crcmod 1.7
+ * Pillow 6.1.10
  
 Abre uno de los ejemplos de la carpeta *examples*. Estos ejemplos envían la trama JITBUS, esperan la respuesta y reciben la trama en el mismo código. Por este motivo es necesario que conectes por USB un dispositivo que implemente el protocolo JITBUS para que pueda contestar. Sino dispones de ese recurso puedes emplear un chip FTDI en modo eco (loopback mode). Para ello hay que conectar el pin TX al pin RX. De esta forma la trama enviada al chip FTDI será devuelta al ordenador como si fuera un eco.
  
