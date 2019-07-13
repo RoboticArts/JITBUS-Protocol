@@ -6,6 +6,8 @@ Autor: Robert Vasquez Zavaleta
 
 *Robotic Arts, All Rights Reserved 2017-2019*
 
+Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+
 **Contenidos:**
 
 * [Protocolo JITBUS](#protocolo-jitbus)
@@ -84,7 +86,7 @@ Descarga este repositorio desde Github Web para poner en marcha todos los ejempl
    * GUI test
    * jitbus.py
    
-Es recomendable trabajar con el *IDE PyCharm* y Python 3.6 ya que son las condiciones con las que se ha desarrollado el proyecto. Los modulos que deben instalarse previamente para hacer funionar los ejemplos  son:
+Es recomendable trabajar con el **IDE PyCharm** y Python 3.6 ya que son las condiciones con las que se ha desarrollado el proyecto. Los modulos que deben instalarse previamente para hacer funionar los ejemplos  son:
 
  * pyserial 2.7
  * crcmod 1.7
