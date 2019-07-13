@@ -86,7 +86,7 @@ Descarga este repositorio desde Github Web para poner en marcha todos los ejempl
    * GUI test
    * jitbus.py
    
-Es recomendable trabajar con el **IDE PyCharm** y Python 3.6 ya que son las condiciones con las que se ha desarrollado el proyecto. Los modulos que deben instalarse previamente para hacer funionar los ejemplos  son:
+Es recomendable trabajar con el **IDE PyCharm** y **Python 3.6** ya que son las condiciones con las que se ha desarrollado el proyecto. Los modulos que deben instalarse previamente para hacer funcionar los ejemplos  son:
 
  * pyserial 2.7
  * crcmod 1.7
