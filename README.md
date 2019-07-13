@@ -73,6 +73,7 @@ Por otro lado, el protocolo JITBUS tiene dedicado un bit para saber el signo del
 
 * Implementar una capa de aplicación en este protocolo que permita crear un diccionario de objetos. De esta forma cada actuador tendrá un identificador fijo que facilite la portabilidad del código.
 
+<a name="comenzando"/>
 
 ## ¡Comenzando! :rocket:
 
@@ -157,7 +158,7 @@ time.sleep(0.002)
 
 Se envía un mensaje con identificador 0x1D4 y dato 19. Es recomendable realizar una espera de 2 ms para evitar problemas con la latencia del ordenador. Si no se realiza la pausa, los bytes recibidos por el puerto serie que no hayan sido recogidos por el USB se almacenarán en un buffer para su posterior comprobación. 
 
-<a name="recpecion"/>
+<a name="recepcion"/>
 
 ## Recepción de mensajes
 
@@ -200,7 +201,7 @@ Si en vez de recibir todos los mensajes de golpe se desea recibirlos uno a uno s
    
 ```
  
- <a name="recpecion-filtrado"/>
+ <a name="recepcion-filtrado"/>
  
  ## Recepción de mensajes con filtrado
  
