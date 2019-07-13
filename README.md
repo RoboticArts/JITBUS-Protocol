@@ -1,6 +1,4 @@
-# JITBUS-Protocol
-
-<a name="protocolo-jitbus"/>
+# JITBUS-Protocol  <a name="protocolo-jitbus"/>
 
 Autor: Robert Vasquez Zavaleta
 
