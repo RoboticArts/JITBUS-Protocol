@@ -7,17 +7,17 @@ Autor: Robert Vasquez Zavaleta
 
 **Contenidos:**
 
-* Protocolo JITBUS
+* [Protocolo JITBUS]
   * [Introducción](#introducción)
-  * Motivación
-  * Protocolo JITBUS
-  * ¡Comenzando!
-* Funciones del módulo JITBUS
-  * Inicialización
-  * Envío de mensajes
-  * Recepción de mensajes
-  * Recepción de mensajes con filtrado
-* Interfaz JITBUS 
+  * [Motivación](#motivacion)
+  * [Protocolo JITBUS](#protocolo-jitbus)
+  * [¡Comenzando!](#comenzando)
+* [Funciones del módulo JITBUS](#funciones)
+  * [Inicialización](#inicialización)
+  * [Envío de mensajes](#envio)
+  * [Recepción de mensajes](#recepcion)
+  * [Recepción de mensajes con filtrado](#recepcion-filtrado)
+* [Interfaz JITBUS](#interfaz)
 
 <a name="introducción"/>
 
